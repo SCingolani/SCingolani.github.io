@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head profile="http://www.w3.org/2005/10/profile">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -12,54 +13,118 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="landing.css">
-</head><body onload="if (typeof(Storage) == 'undefined' || sessionStorage.alreadyLanded != 'true' ) {document.body.className += ' landed';}; if (typeof(Storage) !== 'undefined') { sessionStorage.setItem('alreadyLanded', true); };" class="no-anim">
-<script>if (typeof(Storage) == 'undefined' || sessionStorage.alreadyLanded != 'true' ) {document.body.className = '';};</script>
+</head>
 
-<div class="cover"></div>
+<body
+  onload="if (typeof(Storage) == 'undefined' || sessionStorage.alreadyLanded != 'true' ) {document.body.className += ' landed';}; if (typeof(Storage) !== 'undefined') { sessionStorage.setItem('alreadyLanded', true); };"
+  class="no-anim">
+  <script>if (typeof (Storage) == 'undefined' || sessionStorage.alreadyLanded != 'true') { document.body.className = ''; };</script>
 
-<div class="header">
-<div class="title">
-  <h1> Juan Santiago Cingolani </h1>
-  <div class=logo><img src="result.png" id="logo-img"/></div>
-</div>
-<div class="navbar">
-<ul>
-  <li><a href="index.html" class="active">Home</a></li>
-  <li><a href="cv.html">CV</a></li>
-  <li><a href="blog.html">Blog</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
-</div>
-</div>
-<div class="flex-container">
-  <div class="flex-photo">
-    <div class="flex-photo-container">
-      <img src="foto.jpg"/>
+  <div class="cover"></div>
+
+  <div class="header">
+    <div class="title">
+      <h1> Juan Santiago Cingolani </h1>
+      <div class=logo><img src="result.png" id="logo-img" /></div>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
   </div>
-  <ul class="flex-data">
-    <li> <h2> Licentiate in Chemistry &#8212 UNLP, Argentina </h2>
-      <p>Specialization in Physical Chemistry.</p></li>
-    <li> <h2>Thesis &#8212 Computational Chemistry</h2> <p>Parametrization of the
-        DFTB method using freely available software.</p></li>
-    <li> Teaching Assistant &#8212 Physical Chemistry, UNLP
-    <li>
-      <span style="display: inline-block;vertical-align: top; width: 100px;"> Interests:</span>
-      <ul style="display: inline-block; padding: 0; list-style-type: none;">
-        <li> Nano- and micro-electronics </li>
-        <li> Materials modeling </li>
-        <li> Electronics </li>
-        <li> Programming </li>
-      </ul>
-    </li>
-    <li style="margin-top: -2.5%;">
-      <a href="https://www.linkedin.com/in/santiago-cingolani/" style="color: #008cba;">Visit my LinkedIn profile</a>
-    </li>
-  </ul>
-</div>
+  <div class="flex-container">
+    <div class="flex-photo">
+      <div class="flex-photo-container">
+        <img src="foto.jpg" />
+      </div>
+    </div>
+    <ul class="flex-data">
+      <li>
+        <h2> PhD Student &#8212 TUM, Germany </h2>
+        <p><a href="https://www.department.ch.tum.de/th4/lehrstuhl-fuer-theoretische-chemie/">Lehrstuhl für Theoretische
+            Chemie &#x2197;</a></p>
+        <p>Fakultät für Chemie</p>
+        <p>Technische Universität München</p>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/santiago-cingolani/" style="font-weight: bold;">Visit my LinkedIn
+          &#x2197;</a>
+      </li>
+    </ul>
+  </div>
 
-<div class="footer">
-  Copyright © 2017 Juan Santiago Cingolani
-</div>
+  <div id="main-card">
+    <div id="main-card-container">
+      <div id="personal">
+        <div id="aboutme">
+          <h2> About me </h2>
+          <blockquote class="quote">
+            Your scientists were so preoccupied with whether or not they could, they
+            didn't stop to think if they should.
+          </blockquote>
+          <p> I always face questions of the like of: &#8220;Why are you doing
+            that?&#8221; &#8220;Why don't you just buy it?&#8221;. The answer is that
+            <strong>I enjoy the process</strong>; the process of researching, the
+            process of learning, the process of designing, and the process of building
+            something myself, rather than just buying an off-the-shelf solution. As
+            such I find myself always on the lookout for new projects to teach myself
+            something new, mostly within the realms of software development,
+            electronics, and occasionally music. This philosophy permeates my life so
+            don't be surprised if one day you find me fermenting ginger to make beer or
+            researching how to make cheese.
+          </p>
+        </div>
 
-</body></html>
+        <div id="github-links">
+          <h2> Links </h2>
+
+          <div class="flex-linkedin-logo">
+            <a href="https://www.linkedin.com/in/santiago-cingolani/"><img src="LI-Logo.png" /></a>
+          </div>
+          <div class="flex-github-logo">
+            <a href="https://github.com/SCingolani/"><img src="GitHub-Mark-64px.png" />1</a>
+          </div>
+          <div class="flex-github-logo">
+            <a href="https://github.com/SimplyNaOH/"><img src="GitHub-Mark-64px.png" />2</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="paper-container">
+        <h2> Scientific publications </h2>
+        <div class="flex-paper-container">
+          <div class="flex-paper">
+            <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.9b05642">
+              <img src="paper_1.png" />
+            </a>
+          </div>
+          <div class="flex-paper">
+            <a href="https://aip.scitation.org/doi/abs/10.1063/5.0020126">
+              <img src="paper_2.png" />
+            </a>
+          </div>
+          <div class="flex-paper">
+            <a href="https://pubs.acs.org/doi/abs/10.1021/acsnano.0c10377">
+              <img src="paper_3.png" />
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+<video autoplay muted loop id="myVideo">
+	<source src="C:\Users\Santiago\Documents\PhD\old\PhD\lmcatpromotionalmovie2\flakes\combined.mp4" type="video/mp4">
+</video>
+-->
+  <div class="footer">
+    Copyright © 2021 Juan Santiago Cingolani
+  </div>
+
+</body>
+
+</html>

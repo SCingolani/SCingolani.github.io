@@ -1,6 +1,9 @@
+@import "nord.scss";
+
+
 .title {
   /* margin: 50px 0 0 0; */
-  background-color: #2e3440;
+  background-color: $nord0;
   height: 100px;
   position: relative;
 }
@@ -15,14 +18,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media only screen and (min-width: 470px) {
   .title {
     height: 200px;
   }
+
   .title h1 {
     font-size: 2em;
   }
@@ -36,55 +39,49 @@
   position: absolute;
   bottom: -45px;
   left: calc(50% - 50px);
-  -webkit-transform: scale(0.2, 0.2);
-          transform: scale(0.2, 0.2);
+  transform: scale(0.2, 0.2);
 }
 
 @media only screen and (min-width: 470px) {
   .logo {
     bottom: -38px;
-    -webkit-transform: scale(0.5, 0.5);
-            transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
   }
 }
 
+.logo img {}
+
 .navbar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #4c566a;
+  background-color: $nord3;
 }
 
 .navbar li {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 250px;
-          flex: 0 1 250px;
+  flex: 0 1 250px;
   float: left;
   /* width: 25%; */
 }
 
 .navbar li a {
   display: block;
-  color: #d8dee9;
+  color: $nord4;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .navbar li a:hover:not(.active) {
-  background-color: #434c5e;
+  background-color: $nord2;
 }
 
 .navbar li a.active {
-  color: #e5e9f0;
-  background-color: #3b4252;
+  color: $nord5;
+  background-color: $nord1;
 }
 
 .navbar .menu-content {
@@ -92,8 +89,7 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
 }
@@ -101,4 +97,3 @@
 .navbar .menu:hover .menu-content {
   display: block;
 }
-/*# sourceMappingURL=header.css.map */
